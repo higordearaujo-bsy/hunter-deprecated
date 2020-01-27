@@ -35,6 +35,15 @@ hunter_add_version(
     URL "https://github.com/hunter-packages/grpc/archive/v1.17.2-p0.tar.gz"
     SHA1 "7eb5711cc4fbc7a33563121b1a6921eac0a863ef")
 
+hunter_add_version(
+    PACKAGE_NAME gRPC
+    VERSION "1.26.0"
+    URL "file:///home/caetano/lab/grpc.tar.gz"
+    # URL "https://github.com/grpc/grpc/archive/v1.26.0.tar.gz"
+    SHA1 e7108c23868da6edf78421f2963c19c413137cf9)
+    #SHA1 "69ac73b58c058e4c48ec1192f1a1c67a46f5194d")
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(gRPC)
 hunter_download(PACKAGE_NAME gRPC)
+

@@ -152,6 +152,7 @@ hunter_default_version(TCLAP VERSION 1.2.2-p1)
 hunter_default_version(TIFF VERSION 4.0.2-p5)
 hunter_default_version(Tesseract VERSION 3.05.01-hunter-3)
 hunter_default_version(Urho3D VERSION 1.7-p15)
+hunter_default_version(VTK VERSION 8.1.0)
 hunter_default_version(Vulkan-Headers VERSION 1.1.127-p0)
 hunter_default_version(VulkanMemoryAllocator VERSION 2.1.0-p0)
 hunter_default_version(WDC VERSION 1.1.5)
@@ -597,3 +598,4 @@ if(ANDROID)
     # TODO: Add more versions
   endif()
 endif()
+
