@@ -37,11 +37,9 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME gRPC
-    VERSION "1.26.0"
-    URL "file:///home/caetano/lab/grpc.tar.gz"
-    # URL "https://github.com/grpc/grpc/archive/v1.26.0.tar.gz"
-    SHA1 e7108c23868da6edf78421f2963c19c413137cf9)
-    #SHA1 "69ac73b58c058e4c48ec1192f1a1c67a46f5194d")
+    VERSION "1.26.0-p0"
+    URL "https://github.com/caetanus/grpc/archive/v1.26.0-p0.tar.gz"
+    SHA1 "328b8613c1252228d7ae87761ead6aa87300fbee")
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(gRPC)
