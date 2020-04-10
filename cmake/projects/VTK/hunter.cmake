@@ -35,7 +35,16 @@ hunter_add_version(
 #   URL "https://www.VTK.org/files/release/7.1/VTK-7.1.1.tar.gz"
 #   SHA1 2827037cfec06c4119f02d72f5a184551fcf640d
 # )
-
+if(MSVC)
+hunter_cmake_args(VTK CMAKE_ARGS
+    BUILD_SHARED_LIBS=OFF
+    BUILD_TESTS=OFF
+    VTK_WRAP_PYTHON=OFF
+    VTK_FORBID_DOWNLOADS=ON
+    BUILD_DOCUMENTATION=OFF
+    BUILD_EXAMPLES=OFF
+)
+else()
 hunter_cmake_args(VTK CMAKE_ARGS
     CMAKE_CXX_STANDARD=14
     CMAKE_CXX_STANDARD_REQUIRED=OFF
@@ -50,8 +59,10 @@ hunter_cmake_args(VTK CMAKE_ARGS
     BUILD_DOCUMENTATION=OFF
     BUILD_EXAMPLES=OFF
 )
+endif()
 
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(VTK)
 hunter_download(PACKAGE_NAME VTK)
+
