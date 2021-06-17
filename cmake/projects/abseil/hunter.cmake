@@ -13,6 +13,17 @@ hunter_add_version(
     PACKAGE_NAME
     abseil
     VERSION
+    20210324.2
+    URL
+    "https://github.com/abseil/abseil-cpp/archive/refs/tags/20210324.2.tar.gz"
+    SHA1
+    2d46ae096bfbdab19de1d65079b95e0fae9efe2e
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    abseil
+    VERSION
     20200225.2
     URL
     "https://github.com/abseil/abseil-cpp/archive/20200225.2.tar.gz"
