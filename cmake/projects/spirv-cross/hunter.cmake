@@ -30,6 +30,28 @@ hunter_add_version(
     766604e35bf4243916d403310922a0b9d930f43b
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    spirv-cross
+    VERSION
+    20200917
+    URL
+    "https://github.com/KhronosGroup/SPIRV-Cross/archive/2020-09-17.tar.gz"
+    SHA1
+    76df6c9378950ed805f372ee9bed7b55a3a8d9c6
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    spirv-cross
+    VERSION
+    20210115
+    URL
+    "https://github.com/KhronosGroup/SPIRV-Cross/archive/2021-01-15.tar.gz"
+    SHA1
+    af14f12634e98ff2e1ee64502b86f2e17d1a02dd
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(spirv-cross)
 hunter_download(PACKAGE_NAME spirv-cross)
