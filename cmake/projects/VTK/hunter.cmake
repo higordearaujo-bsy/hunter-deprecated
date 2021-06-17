@@ -35,6 +35,12 @@ hunter_add_version(
   URL "https://www.vtk.org/files/release/9.0/VTK-9.0.1.tar.gz"
   SHA1 578be3303b6ee5bb7ad23c2a87f02475f407bccb
 )
+hunter_add_version(
+  PACKAGE_NAME VTK
+  VERSION "9.0.1-p0"
+  URL "https://gitlab.kitware.com/vtk/vtk/-/archive/9b0fa2cfe62bbdfbc3dcaab63235759503924f5e/vtk-9b0fa2cfe62bbdfbc3dcaab63235759503924f5e.tar.gz"
+  SHA1 e83a5b612af33852de1bb51f3ee5a97d4ac75e28
+)
 
 # hunter_add_version(
 #   PACKAGE_NAME VTK
