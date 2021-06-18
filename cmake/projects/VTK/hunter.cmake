@@ -37,7 +37,7 @@ hunter_add_version(
 )
 hunter_add_version(
   PACKAGE_NAME VTK
-  VERSION "9.0.1-p0"
+  VERSION "9.0.1-9b0fa2"
   URL "https://gitlab.kitware.com/vtk/vtk/-/archive/9b0fa2cfe62bbdfbc3dcaab63235759503924f5e/vtk-9b0fa2cfe62bbdfbc3dcaab63235759503924f5e.tar.gz"
   SHA1 e83a5b612af33852de1bb51f3ee5a97d4ac75e28
 )
@@ -67,8 +67,8 @@ set(vtk_global_opts__
     VTK_BUILD_TESTING=OFF
     VTK_ENABLE_WRAPPING=OFF
     VTK_GROUP_ENABLE_Qt=DONT_WANT
-    VTK_GROUP_ENABLE_Rendering=WANT
-    VTK_GROUP_ENABLE_StandAlone=WANT
+    VTK_GROUP_ENABLE_Rendering=DONT_WANT
+    VTK_GROUP_ENABLE_StandAlone=DONT_WANT
     VTK_GROUP_ENABLE_Views=WANT
     VTK_MODULE_ENABLE_VTK_CommonComputationalGeometry=WANT
     VTK_MODULE_ENABLE_VTK_FiltersGeneral=WANT
