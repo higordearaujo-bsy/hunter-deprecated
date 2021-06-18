@@ -50,9 +50,9 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME gRPC
-    VERSION "1.38.0"
-    URL "https://github.com/grpc/grpc/archive/refs/tags/v1.38.0.tar.gz"
-    SHA1 "c377221098852c7d148182ee66d04921d8823b53")
+    VERSION "1.38.0-p0"
+    URL "http://localhost:8000/grpc-hunter.tar.gz"
+    SHA1 "1c2a47edcb1fdbd0b4a02000fc26d46f6c592abf")
 
 hunter_cmake_args(
    gRPC
