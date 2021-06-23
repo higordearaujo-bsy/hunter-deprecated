@@ -51,8 +51,8 @@ hunter_add_version(
 hunter_add_version(
     PACKAGE_NAME gRPC
     VERSION "1.38.0-p0"
-    URL "http://localhost:8000/grpc-hunter.tar.gz"
-    SHA1 "5d028bc6f2037fb712aff78d062f546e3f69f081"
+    URL  "https://github.com/caetanus/grpc/archive/refs/heads/hunter-1.38.0.tar.gz"
+    SHA1 "60f25ac22b3ec76742ce9009ef224392b12a8fda"
     )
 
 hunter_cmake_args(
